@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+$base-color : #DA0037;
+$base-text-color: #EDEDED;
+$back-color: #171717;
 
 html,body{
     margin: 0;
@@ -8,7 +11,7 @@ html,body{
     height: 100%;
 }
 body{
-    background-color: #171717;
+    background-color: $back-color;
     &::-webkit-scrollbar {
         width: 4px;
     }
@@ -17,7 +20,7 @@ body{
         border-radius: 10px;
       }
     &::-webkit-scrollbar-thumb {
-        background: #DA0037;
+        background: $base-color;
         border-radius: 10px;
     }
 
@@ -29,10 +32,10 @@ body{
         .nav-brand{
             width: 20%;
             height: 80px;
-            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
+            float: left;
             .nav-brand-img{
                 img{
                     height:55px;
@@ -45,7 +48,41 @@ body{
                 font-size: 20px;
                 font-weight: 700;
                 margin: 0px 10px;
-                color: #EDEDED;
+                color: $base-text-color;
+            }
+        }
+        .nav-links{
+            width: 60%;
+            height: 80px;
+            float: left;
+            .nav-link-group{
+                width: auto;
+                height: 80px;
+                margin-top: 0px;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .nav-link{
+                        width: 120px;
+                        height: 50px;
+                        text-decoration: none;
+                        color: $base-text-color;
+                        font-weight: 600;
+                        margin: 0px 10px;
+                        li{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            float: left;
+                            width: 120px;
+                            height: 50px;
+                            &:hover{
+                                border-bottom: 2px solid $base-color;
+                            }
+                    }
+                    
+                }
             }
         }
     }
