@@ -1,0 +1,18 @@
+$base-color : #DA0037;
+$base-text-color: #EDEDED;
+$back-color: #171717;
+body{
+    #navbar{
+        .active{
+            font-weight: 500;
+        }
+      .navbar-brand{
+        font-weight: 600;
+      }
+      .nav-link{
+        &:hover{
+            color: $base-color;
+        }
+      }
+    }
+}
