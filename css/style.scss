@@ -1,28 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-$base-color : #DA0037;
-$base-text-color: #EDEDED;
-$back-color: #171717;
-
+@import 'color';
+@import 'navbar';
+@import 'home_about';
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+$font : 'Signika', sans-serif;
 html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100%;
 }
-
-@import 'navbar';
-
 body{
-    font-family: 'Roboto', sans-serif;
-    &::-webkit-scrollbar {
-        width: 4px;
-    }
-    &::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px transparent;
-        border-radius: 10px;
-      }
-    &::-webkit-scrollbar-thumb {
-        background: $base-color;
-        border-radius: 10px;
+    background-color: $back-color;
+    .home-back-shapes{
+        width: 480px;
+        height: 450px;
+        transform: rotate(20deg);
+        position: absolute;
+        left: 22%;
+        top: 30%;
+        opacity: 0.1;
+        .shapes{
+            float: left;
+            width: 200px;
+            height: 200px;
+            border: 1px solid $light-green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+            .shapes-inner{
+                width: 75%;
+                height: 75%;
+                border: 1px solid $light-green;
+            }
+        }
     }
 }
