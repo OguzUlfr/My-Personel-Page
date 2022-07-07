@@ -1,0 +1,45 @@
+.navbar{
+    flex-direction: row;
+}
+#navbar .navbar .brand{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4ECCA3;
+}
+#navbar .navbar .link-group{
+    width: 80%;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+#navbar .navbar .link-group .link{
+   display: flex;
+}
+#navbar .navbar .github a{
+    padding: 0.5rem 1rem;
+}
+#home-content{
+    flex-direction: column;
+    margin-top: 0%;
+    justify-content: space-around;
+}
+#home-content .mini-about{
+    width: 70%;
+    padding-top: 8rem;
+}
+#home-content .mini-about span{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#home-content .mini-about h2{
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+#home-content .mini-about p{
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    color: #4F5D75;
+}
