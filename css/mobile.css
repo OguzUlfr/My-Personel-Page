@@ -43,3 +43,63 @@
     font-size: 1.2rem;
     color: #4F5D75;
 }
+.about{
+    background: url("../img/Subtract.png") no-repeat center center;
+    margin-top: 70px;
+    flex-direction: column;
+}
+.about .about-text{
+    width: 80%;
+    padding: 0px 140px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+.about .about-lines{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 500px;
+}
+.about .about-lines .line{
+    width: 10px;
+    height: 30vh;
+    background-color: #4ECCA3;
+    border-radius: 10px;
+    margin: 10px;
+}
+.about .about-lines .line:nth-child(2){
+    height: 20vh;
+}
+.about .about-lines .line:nth-child(3){
+    height: 15vh;
+}
+.about .about-lines .line:nth-child(5){
+    height: 20vh;
+}
+.projects{
+    flex-direction: column;
+}
+.skilss .skill-group{
+    flex-direction: row;
+}
+.skilss .skill-group .skill-card{
+    width: 160px;
+    height: 210px;
+    margin: 10px 5px;
+}
+.skilss .skill-group .skill-card .skill-bar{
+    width: 140px;
+    height:12px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+.skilss .skill-group .skill-card .skill-bar .skill-line{
+    width: 100px;
+    height:12px;
+    background-color: #4ECCA3;
+    border-radius: 10px;
+}
