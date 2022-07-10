@@ -20,24 +20,24 @@
 #navbar .navbar .github a{
     padding: 0.5rem 1rem;
 }
-#home-content{
+.home-content{
     flex-direction: column;
     margin-top: 0%;
     justify-content: space-around;
 }
-#home-content .mini-about{
+.home-content .mini-about{
     width: 70%;
     padding-top: 8rem;
 }
-#home-content .mini-about span{
+.home-content .mini-about span{
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
-#home-content .mini-about h2{
+.home-content .mini-about h2{
     font-size: 4rem;
     margin-bottom: 0px;
 }
-#home-content .mini-about p{
+.home-content .mini-about p{
     width: 100%;
     height: auto;
     font-size: 1.2rem;
@@ -83,8 +83,12 @@
 .projects{
     flex-direction: column;
 }
+.skilss{
+    height: auto;
+}
 .skilss .skill-group{
     flex-direction: row;
+    height: auto;
 }
 .skilss .skill-group .skill-card{
     width: 160px;
@@ -102,4 +106,94 @@
     height:12px;
     background-color: #4ECCA3;
     border-radius: 10px;
+}
+.contacts{
+    width: 100%;
+    margin-top: 10%;
+    height: auto;
+}
+.contacts .contact-box{
+    width: 90%;
+    height: auto;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.contacts .contact-box .contact-left{
+    width: 100%;
+    height: 50vh;
+    background: url("../img/Group\ 33.png") center center no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contacts .contact-box .contact-left h3{
+    color: #4ECCA3;
+    font-size: 2rem;
+}
+.contacts .contact-box .contact-left p{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.contacts .contact-box .contact-left .social i{
+    font-size: 3rem;
+    margin: 10px;
+    color: #4ECCA3;
+}
+.contacts .contact-box .contact-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contacts .contact-box .contact-form h3{
+    width: 85%;
+    color: #4ECCA3;
+    font-size: 3rem;
+}
+.contacts .contact-box .contact-form input,#content{
+    width: 80%;
+    height: 60px;
+    background-color: #353535;
+    border: none;
+    border-radius: 12px;
+    padding: 0px 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 20px 10px;
+}
+.contacts .contact-box .contact-form #mail{
+    width: 80%;
+}
+.contacts .contact-box .contact-form #title{
+    width: 80%;
+}
+.contacts .contact-box .contact-form #contect{
+    padding: 10px 15px;
+    resize: none;
+    width: 80%;
+    height: 20%;
+}
+.contacts .contact-box .contact-form input:focus,#content:focus{
+    outline: none;
+}
+.contacts .contact-box .contact-form #submit-btn{
+    width: 30%;
+    height: 40px;
+    background-color: #4ECCA3;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+}
+.contacts .contact-box .contact-form #submit-btn:hover{
+    background-color: #40aa87;
+    cursor: pointer;
 }

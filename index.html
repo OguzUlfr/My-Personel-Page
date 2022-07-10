@@ -7,6 +7,7 @@
   <meta name="description" content="Kendini gelişime odaklamış bir yazılımcı. Fazlası içn hadi durma tıkla ve ziyaret et.">
   <meta name="keywords" content="Html, Css, Javascript, Sass, Frontend">
   <title>Oğuzhan Ülüfer | Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/style.css">
@@ -16,22 +17,22 @@
 <body>
 
   <header id="navbar">
-    <nav class="navbar">
+    <nav class="navbar" id="home">
       <div class="brand">Oğuzhan Ülüfer</div>
       <ul class="link-group">
-        <li  class="link"><a href="">Anasayfa</a></li>
-        <li  class="link"><a href="">Hakkımda</a></li>
-        <li  class="link"><a href="">Çalışmalarım</a></li>
-        <li  class="link"><a href="">Becerilerim</a></li>
-        <li  class="link"><a href="">İletişim</a></li>
+        <li  class="link"><a href="#home">Anasayfa</a></li>
+        <li  class="link"><a href="#about">Hakkımda</a></li>
+        <li  class="link"><a href="#works">Çalışmalarım</a></li>
+        <li  class="link"><a href="#skills">Becerilerim</a></li>
+        <li  class="link"><a href="#contact">İletişim</a></li>
       </ul>
       <div class="github">
-        <a href="">GitHub</a>
+        <a href="https://github.com/OguzUlfr" target="_blank">GitHub</a>
       </div>
     </nav>
   </header>
 
-  <section id="home-content">
+  <section class="home-content">
     <div class="mini-about">
       <span>merhaba Ben</span>
       <h2>Oğuzhan</h2>
@@ -46,7 +47,7 @@
     </div>
   </section>
   
-  <section class="about">
+  <section id="about" class="about">
     <div class="about-text">Merhaba ben Oğuzhan Ülüfer.
        26 Mart 2000 yılında İstanbul’da dünyaya geldim. 
        İlk ve orta öğretim hayatımı İstanbul’da gerçekleştirdim.
@@ -70,7 +71,7 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section id="works" class="projects">
     <div class="project-card">
       <div class="img" style="background-image: url(https://wishdesk.com/sites/default/files/inline-images/example-of-dark-website-design-1.png);"></div>
       <a href="">deneme.com</a>
@@ -89,7 +90,7 @@
     </div>
   </section>
 
-  <section class="skilss">
+  <section id="skills" class="skilss">
     <h3>Becerilerim</h3>
     <div class="skill-group">
       <div class="skill-card">
@@ -168,6 +169,30 @@
         <div class="skill-bar">
           <div class="skill-line"></div>
         </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contacts">
+    <div class="contact-box">
+      <div class="contact-left">
+        <h3>Contact</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas adipisci nobis et! Harum consectetur quibusdam quis optio soluta rem culpa dolore asperiores recusandae! Deserunt, laboriosam!</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/oguzhan-ulufer/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://twitter.com/OguzhanUlufer" target="_blank"><i class="bi bi-twitter"></i></a>
+          <a href="mailto:oguzulufer@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.instagram.com/oguz_ulfr/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Contact Form</h3>
+        <input type="text" id="name" placeholder="İsim">
+        <input type="text" id="surname" placeholder="Soyisim">
+        <input type="text" id="mail" placeholder="Mail Adresiniz">
+        <input type="text" id="title" placeholder="Başlık">
+        <textarea name="" id="content" placeholder="İçerik"></textarea>
+        <button id="submit-btn">Gönder</button>
       </div>
     </div>
   </section>
